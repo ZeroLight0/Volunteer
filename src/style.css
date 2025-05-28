@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.techfest_icon {
+  mix-blend-mode: multiply;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.container {
+  flex-direction: row;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.containerLeft,
+.containerRight {
+  padding: 2rem;
+  width: 50%;
+}
+
+.containerRight {
+  color: white;
+}
+
+form {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.inputName {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button.submit {
+  background-color: #c2410c;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+  background-color: #9a3412;
+}
+
+.techfest-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* margin-top: 1.5rem; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    border-radius: 1rem;
+  }
+
+  .containerLeft,
+  .containerRight {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .inputName {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .techfest-imgs img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .join {
+    font-size: 2rem;
+  }
+
+  .joinsubtext {
+    font-size: 1rem;
+  }
+
+  .fText {
+    font-size: 1.5rem;
+  }
+
+  .presents {
+    font-size: 1rem;
+  }
+}
