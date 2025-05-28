@@ -5,7 +5,7 @@ Volunteers will fill in their details which include phone number and then a what
 
 Stack
 
-Html
-Css
-TailwindCss
-NodeJs
+1. Html <br>
+2. Css <br>
+3. TailwindCss <br>
+4. NodeJs <br>
